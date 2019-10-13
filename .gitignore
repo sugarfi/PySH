@@ -1,0 +1,7 @@
+# Compiled python files
+*__pycache__
+*.pyc
+
+# Temp files created by Vi
+*.*~
+*.swp
