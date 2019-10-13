@@ -2,13 +2,14 @@ import lexer
 import run
 import sys
 import var
+import getpass
 COMMAND = 'command'
 UNKNOWN = 'unknown'
-print('bash')
+print('PySh')
 try:
     while True:
         try:
-            code = input('user1@' + var.CD_NAME + ' $ ')
+            code = input(getpass.getuser() + '@' + var.CD_NAME + ' $ ')
             if code == 'exit':
                 break
             lexed = lexer.lex(code)
